@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        .content {
+          max-width: 960px;
+          margin: auto;
+        }
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+
+        h3 {
+            color: green;
+            size: 100px;
+            text-align: center;
+        }
+        #scary-font {
+            color: red;
+            font-family: "Creepster", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .center-text{
+            text-align: center;
+        }
+        .list-align{
+            display: inline-block;
+            text-align: left;
+        }
+
+        .container {
+            position: relative;
+            align-self: center;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: black;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 100px;
+            font-family: "Creepster", system-ui;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+
+    <head>
+        <title>My Favorite Thing About School</title>
+    </head>
+
+    <div class="content">
+    <body>
+        <h1>My Favorite Thing About School: <span style="color: green;">Chemistry</span></h1>
+        <br>
+        <h2><q id="scary-font">I am not failing Advanced Chemsitry</q> -Many, many Advanced Chemistry students</h2>
+        
+        <div class="container">
+            <img src="images/i am not failing advanced chemistry.gif" alt="Not failing advanced chemistry gif" width="860" height="660" class="image">
+            <div class="overlay">
+                <div class="text">famous last words...</div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div style="background-color: lightgray; border-style: outset;">
+            <h3>10th Grade Chemistry</h3>
+            <p class="center-text">Tenth grade chemistry was my first chemsity course and was where I fell in first fell in love with the topic.
+                It was a fun class and my section was taught by <a href="https://www.eastsideprep.org/faculty/david-lao/">Dr Lao.</a>
+            </p>
+            <br>
+            <h3>11th Grade Advanced Chemistry</h3>
+            <div class="center-text">
+                <ul class="list-align">
+                    <li>Difficult content </li>
+                    <li>Rewarding when you understand it</li> 
+                    <li>Interesting labs</li> 
+                    <li>Enganging overall</li> 
+                </ul>
+            </div>
+            
+            <br>
+            <h3>12th Grade Ogranic Chemistry</h3>
+            <p class="center-text">Don't know yet! Will have to find out, so far it is fun though! So much less math, phew.</p>
+        </div>
+
+    </body>
+    </div>
+</html>
